@@ -13,12 +13,18 @@
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.9.0",
     "mongoose": "^8.7.2",
-    "nodemon": "^3.1.7"
+    "nodemon": "^3.1.7",
+    "recipe-app": "file:"
   },
   "scripts": {
     "start": "nodemon server.js",
-    "build": "react-scripts build",
+    "build": "babel src -d dist",
     "test": "react-scripts test echo",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.25.9",
+    "@babel/core": "^7.25.9",
+    "@babel/preset-env": "^7.25.9"
   }
 }
